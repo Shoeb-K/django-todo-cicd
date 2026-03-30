@@ -50,6 +50,8 @@ This project demonstrates how to build, containerize, and deploy a web applicati
 *(Add screenshots here)*
 - GitHub Actions / Jenkins pipeline
 - Running app
+![todo App](./staticfiles/todoApp.png)
+
 - Docker container
 
 ---
