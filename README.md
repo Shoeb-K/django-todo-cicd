@@ -1,38 +1,78 @@
-# django-todo
-A simple todo app built with django
+# 🚀 Django TODO App with CI/CD Pipeline
 
-![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
-### Setup
-To get this repository, run the following command inside your git enabled terminal
+## 📌 Overview
+A production-ready Django application with a fully automated CI/CD pipeline using Docker, Jenkins, and GitHub Actions.
+
+This project demonstrates how to build, containerize, and deploy a web application with continuous integration and deployment workflows.
+
+---
+
+## 🏗️ Architecture
+
+- User → Django App
+- Django → SQLite / DB
+- Docker → Containerization
+- Jenkins & GitHub Actions → CI/CD Automation
+
+---
+
+## ⚙️ Tech Stack
+
+- Backend: Django (Python)
+- CI/CD: GitHub Actions, Jenkins
+- Containerization: Docker
+- Deployment: AWS EC2 (if used)
+- Version Control: GitHub
+
+---
+
+## 🔄 CI/CD Pipeline Flow
+
+1. Code pushed to GitHub
+2. GitHub Actions / Jenkins triggers pipeline
+3. Docker image is built
+4. Container is deployed
+5. Application updated automatically
+
+---
+
+## 🚀 Features
+
+- Task management system
+- Admin dashboard
+- Containerized deployment
+- Automated CI/CD pipeline
+
+---
+
+## 📸 Proof of Work
+
+*(Add screenshots here)*
+- GitHub Actions / Jenkins pipeline
+- Running app
+- Docker container
+
+---
+
+## 📦 How to Run
+
 ```bash
-$ git clone https://github.com/shreys7/django-todo.git
-```
-You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
-
-Once you have downloaded django, go to the cloned repo directory and run the following command
-
-```bash
-$ python manage.py makemigrations
+git clone <repo_url>
+cd django-todo-cicd
+docker-compose up
 ```
 
-This will create all the migrations file (database migrations) required to run this App.
+---
 
-Now, to apply this migrations run the following command
-```bash
-$ python manage.py migrate
-```
+## 📊 Improvements (Future Work)
+- Add PostgreSQL instead of SQLite
+- Add authentication APIs
+- Add monitoring (CloudWatch / Prometheus)
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
-```bash
-$ python manage.py createsuperuser
-```
+---
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+## 🧠 Learnings
 
-```bash
-$ python manage.py runserver
-```
-
-Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
-
-Cheers and Happy Coding :)
+- Implemented CI/CD pipelines using GitHub Actions and Jenkins
+- Understood container lifecycle with Docker
+- Learned deployment automation concepts
